@@ -1,0 +1,28 @@
+{
+  "host": "localhost",
+  "port": 8081,
+  "requestQueueSize": 100,
+  "responseQueueSize": 100,
+  "readTimeoutSec": 0,
+  "writeTimeoutSec": 15,
+  "loggerCfg": {
+    "level": "info",
+    "development": false,
+    "sampling": {
+      "initial": 100,
+      "thereafter": 100
+    },
+    "encoding": "json",
+    "encoderConfig": {
+      "messageKey":  "msg",
+      "levelKey": "level",
+      "levelEncoder": "lowercase"
+    },
+    "outputPaths": ["/tmp/logs/touka/log"],
+    "errorOutputPaths": ["stderr"]
+  },
+  "rabbitURI": "amqp://<username>:<password>@<host>:<port>/coursework_broker",
+  "rabbitPublishTimeoutSec": 15,
+  "rabbitExchangeName": "midoriya-tx-x-hse-parsingResult-v1",
+  "rabbitKey": "parsing.result.success"
+}

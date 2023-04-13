@@ -1,0 +1,6 @@
+{
+  "token": "",
+  "apiUrl": "https://comtradeapi.un.org/data/v1/get/",
+  "splitFactor": 16,
+  "requestTimeoutSec": 15
+}
